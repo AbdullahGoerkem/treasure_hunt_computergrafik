@@ -146,14 +146,7 @@ public class StartRendererPP extends GLCanvas implements GLEventListener {
         // Vertices for drawing a triangle.
         // To be transferred to a vertex buffer object on the GPU.
         // Interleaved data layout: position, color
-        float[] verticies = {
-                -0.5f,  0.5f,  +0.0f, 	 // 0 position
-                 0.0f,  0.68f,  0.85f,  // 0 color
-                 0.0f, -0.5f,   0.0f, 	 // 1 position
-                 0.0f,  0.68f,  0.85f,  // 1 color
-                 0.5f,  0.5f,   0.0f, 	 // 2 position
-                 0.0f,  0.68f,  0.85f,  // 2 color
-        };
+
 
         // Create and activate a vertex array object (VAO)
         // Useful for switching between data sets for object rendering.
@@ -176,8 +169,8 @@ public class StartRendererPP extends GLCanvas implements GLEventListener {
         gl.glBindBuffer(GL.GL_ARRAY_BUFFER, vboName[0]);
         // Transferring the vertex data (see above) to the VBO on GPU.
         // (floats use 4 bytes in Java)
-        gl.glBufferData(GL.GL_ARRAY_BUFFER, verticies.length * Float.BYTES,
-                FloatBuffer.wrap(verticies), GL.GL_STATIC_DRAW);
+        gl.glBufferData(GL.GL_ARRAY_BUFFER, Quadrat.verticies.length * Float.BYTES,
+                FloatBuffer.wrap(Quadrat.verticies), GL.GL_STATIC_DRAW);
 
         // Activate and map input for the vertex shader from VBO,
         // taking care of interleaved layout of vertex data (position and color),
@@ -248,7 +241,7 @@ public class StartRendererPP extends GLCanvas implements GLEventListener {
         gl.glUniformMatrix4fv(1, 1, false, pmvMatrix.glGetMvMatrixf());
 
         // Use the first 3 vertices in the VBO to draw a triangle.
-        gl.glDrawArrays(GL.GL_TRIANGLES, 0, 3);
+        gl.glDrawArrays(GL.GL_TRIANGLES, 0, 36);
     }
 
 
