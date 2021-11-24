@@ -169,8 +169,8 @@ public class StartRendererPP extends GLCanvas implements GLEventListener {
         gl.glBindBuffer(GL.GL_ARRAY_BUFFER, vboName[0]);
         // Transferring the vertex data (see above) to the VBO on GPU.
         // (floats use 4 bytes in Java)
-        gl.glBufferData(GL.GL_ARRAY_BUFFER, Quadrat.verticies.length * Float.BYTES,
-                FloatBuffer.wrap(Quadrat.verticies), GL.GL_STATIC_DRAW);
+        gl.glBufferData(GL.GL_ARRAY_BUFFER, Haus.verticies.length * Float.BYTES,
+                FloatBuffer.wrap(Haus.verticies), GL.GL_STATIC_DRAW);
 
         // Activate and map input for the vertex shader from VBO,
         // taking care of interleaved layout of vertex data (position and color),
@@ -208,9 +208,9 @@ public class StartRendererPP extends GLCanvas implements GLEventListener {
         GL3 gl = drawable.getGL().getGL3();
         // Clear color and depth buffer
         gl.glClear(GL3.GL_COLOR_BUFFER_BIT | GL3.GL_DEPTH_BUFFER_BIT);
-
+/*
         // Controlling the interaction settings
-/*        System.out.println("Camera: z = " + interactionHandler.getEyeZ() + ", " +
+        System.out.println("Camera: z = " + interactionHandler.getEyeZ() + ", " +
                 "x-Rot: " + interactionHandler.getAngleXaxis() +
                 ", y-Rot: " + interactionHandler.getAngleYaxis() +
                 ", x-Translation: " + interactionHandler.getxPosition()+
@@ -241,7 +241,7 @@ public class StartRendererPP extends GLCanvas implements GLEventListener {
         gl.glUniformMatrix4fv(1, 1, false, pmvMatrix.glGetMvMatrixf());
 
         // Use the first 3 vertices in the VBO to draw a triangle.
-        gl.glDrawArrays(GL.GL_TRIANGLES, 0, 36);
+        gl.glDrawArrays(GL.GL_TRIANGLES, 0, Haus.verticies.length / 6);
     }
 
 
@@ -267,7 +267,7 @@ public class StartRendererPP extends GLCanvas implements GLEventListener {
         pmvMatrix.glLoadIdentity();
         // Calculate projection matrix
         //      Parameters:
-        //          fovy (field of view), aspect ratio,
+        //          fov (field of view), aspect ratio,
         //          zNear (near clipping plane), zFar (far clipping plane)
         pmvMatrix.gluPerspective(45f, (float) width/ (float) height, 0.1f, 10000f);
         // Switch to model-view transform

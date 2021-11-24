@@ -1,4 +1,4 @@
-public class Quadrat {
+public class Haus {
     public static float[] verticies = {                                   //front
             -0.5f,  -0.5f,   0.0f, 	 // 0 position
             1.0f,  0.0f,  0.0f,  // 0 color
@@ -82,7 +82,36 @@ public class Quadrat {
             -0.5f, 0.5f, 1.0f, //2 pos
             0.0f,  0.68f,  0.15f, //2 color
             -0.5f, 0.5f, 0.0f, //5pos
-            0.0f,  0.68f,  0.15f //5color
+            0.0f,  0.68f,  0.15f, //5color
 
+
+                                        //dach
+            -0.5f, 0.5f, 0.0f,
+            0.0f,  0.68f,  0.15f,
+            0.5f, 0.5f, 0.0f,
+            0.0f,  0.68f,  0.15f,
+            0.0f, 1.0f, 0.5f,
+            0.0f,  0.15f,  0.15f, //spitze schwarz
+
+            0.5f, 0.5f, 0.0f,
+            0.0f,  0.68f,  0.15f,
+            0.5f, 0.5f, 1.0f,
+            0.0f,  0.68f,  0.15f,
+            0.0f, 1.0f, 0.5f,
+            0.0f,  0.15f,  0.15f, //spitze schwarz
+
+            0.5f, 0.5f, 1.0f,
+            0.0f,  0.68f,  0.15f,
+            -0.5f, 0.5f, 1.0f,
+            0.0f,  0.68f,  0.15f,
+            0.0f, 1.0f, 0.5f,
+            0.0f,  0.15f,  0.15f, //spitze schwarz
+
+            -0.5f, 0.5f, 1.0f,
+            0.0f,  0.68f,  0.15f,
+            -0.5f, 0.5f, 0.0f,
+            0.0f,  0.68f,  0.15f,
+            0.0f, 1.0f, 0.5f,
+            0.0f,  0.15f,  0.15f //spitze schwarz
     };
 }
