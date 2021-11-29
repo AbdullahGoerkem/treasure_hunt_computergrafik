@@ -169,6 +169,9 @@ public class StartRendererPP extends GLCanvas implements GLEventListener {
         gl.glBindBuffer(GL.GL_ARRAY_BUFFER, vboName[0]);
         // Transferring the vertex data (see above) to the VBO on GPU.
         // (floats use 4 bytes in Java)
+        float[] boden = {
+
+        };
         gl.glBufferData(GL.GL_ARRAY_BUFFER, Haus.verticies.length * Float.BYTES,
                 FloatBuffer.wrap(Haus.verticies), GL.GL_STATIC_DRAW);
 
@@ -241,7 +244,7 @@ public class StartRendererPP extends GLCanvas implements GLEventListener {
         gl.glUniformMatrix4fv(1, 1, false, pmvMatrix.glGetMvMatrixf());
 
         // Use the first 3 vertices in the VBO to draw a triangle.
-        gl.glDrawArrays(GL.GL_TRIANGLES, 0, Haus.verticies.length / 6);
+        gl.glDrawArrays(GL.GL_TRIANGLES, 0, Haus.verticies.length / 6 + 3); //Exakte Anzahl an Vertices aus der Klasse
     }
 
 

@@ -1,5 +1,21 @@
 public class Haus {
-    public static float[] verticies = {                                   //front
+    public static float[] verticies = {
+                                        //Boden
+            -10.0f, -0.5f, -10.0f,
+            0.5f, 0.5f, 0.5f,
+            10.0f, -0.5f, -10.0f,
+            0.5f, 0.5f, 0.5f,
+            -10.0f, -0.5f, 10.0f,
+            0.5f, 0.5f, 0.5f,
+
+            10.0f, -0.5f, -10.0f,
+            0.5f, 0.5f, 0.5f,
+            10.0f, -0.5f, 10.0f,
+            0.5f, 0.5f, 0.5f,
+            -10.0f, -0.5f, 10.0f,
+            0.5f, 0.5f, 0.5f,
+
+            //front
             -0.5f,  -0.5f,   0.0f, 	 // 0 position
             1.0f,  0.0f,  0.0f,  // 0 color
             0.5f,  -0.5f,   0.0f, 	 // 1 position
@@ -15,18 +31,18 @@ public class Haus {
             1.0f,  0.0f,  0.0f, //5colors
             //back
             -0.5f,  -0.5f,   1.0f, 	 // 0 position
-            0.0f,  0.68f,  0.85f,  // 0 color
+            1.0f,  0.0f,  0.0f,  // 0 color
             0.5f,  -0.5f,   1.0f, 	 // 1 position
-            0.0f,  0.68f,  0.85f,  // 1 color
+            1.0f,  0.0f,  0.0f,  // 1 color
             0.5f, 0.5f, 1.0f, //2 pos
-            0.0f,  0.68f,  0.85f, //2 color
+            1.0f,  0.0f,  0.0f, //2 color
 
             -0.5f, -0.5f, 1.0f, //3pos
-            0.0f,  0.68f,  0.85f, //3colors
+            1.0f,  0.0f,  0.0f, //3colors
             0.5f, 0.5f, 1.0f, //4pos
-            0.0f,  0.68f,  0.85f, //4colors
+            1.0f,  0.0f,  0.0f, //4colors
             -0.5f, 0.5f, 1.0f, //5pos
-            0.0f,  0.68f,  0.85f, //5colors
+            1.0f,  0.0f,  0.0f, //5colors
             //top
             -0.5f,  0.5f,   0.0f, 	 // 0 position
             0.0f,  0.68f,  0.85f,  // 0 color
