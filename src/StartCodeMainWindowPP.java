@@ -61,7 +61,6 @@ public class StartCodeMainWindowPP extends JFrame {
     private static final int GLCANVAS_WIDTH = 640;  // width of the canvas
     private static final int GLCANVAS_HEIGHT = 480; // height of the canvas
     private static final int FRAME_RATE = 60; // target frames per second
-
     /**
      * Standard constructor generating a Java Swing window for displaying an OpenGL canvas.
      */

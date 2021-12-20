@@ -224,8 +224,8 @@ public class StartRendererPP extends GLCanvas implements GLEventListener {
         // Camera positioning is steered by the interaction handler
         pmvMatrix.glLoadIdentity();
         pmvMatrix.gluLookAt(0f, 0f, interactionHandler.getEyeZ(),
-                            0f, 0f, 0f,
-                            0f, 1.0f, 0f);
+                0f, 0f, 0f,
+                0f, 1.0f, 0f);
         pmvMatrix.glTranslatef(interactionHandler.getxPosition(), interactionHandler.getyPosition(), 0f);
         pmvMatrix.glRotatef(interactionHandler.getAngleXaxis(), 1f, 0f, 0f);
         pmvMatrix.glRotatef(interactionHandler.getAngleYaxis(), 0f, 1f, 0f);
