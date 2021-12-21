@@ -1,7 +1,10 @@
 public class Haus extends StartCodeMainWindowPP{
 
-   public static int x = 300;
+   public static int x = 300;       //koordinaten fuer haus
     public static int y = 300;
+
+    public static int t = 50;       //koordinaten fuer baum
+    public static int r = 50;
 
     public static float[] verticies = {
                                         //Boden
@@ -132,6 +135,101 @@ public class Haus extends StartCodeMainWindowPP{
             x-20.0f, +40.0f, y+0.0f,
             0.0f,  0.68f,  0.15f,
             x+0.0f, +60.0f, y+20.0f,
-            0.0f,  0.15f,  0.15f //spitze schwarz */
+            0.0f,  0.15f,  0.15f, //spitze schwarz */
+
+            /*
+            MODELL VOM BAUM
+             */
+                                        //bottom
+            t-20.0f, 0.0f, r-20.0f,
+            0.8f,  0.4f,  0.1f,
+            t+20.0f, 0.0f, r+20.0f,
+            0.8f,  0.4f,  0.1f,
+            t-20.0f, 0.0f , r+20.0f,
+            0.8f,  0.4f,  0.1f,
+                                        //Side1
+            t-20.0f, 0.0f, r-20.0f,
+            0.8f,  0.4f,  0.1f,
+            t+20.0f, 0.0f, r+20.0f,
+            0.8f,  0.4f,  0.1f,
+            t+20.0f, 60.0f, r+20.0f,
+            0.8f,  0.4f,  0.1f,
+
+            t-20.0f, 0.0f, r-20.0f,
+            0.8f,  0.4f,  0.1f,
+            t+20.0f, 60.0f, r+20.0f,
+            0.8f,  0.4f,  0.1f,
+            t-20.0f, 60.0f, r-20.0f,
+            0.8f,  0.4f,  0.1f,
+                                    //Side2
+            t-20.0f, 0.0f, r+20.0f,
+            0.8f,  0.4f,  0.1f,
+            t-20.0f, 0.0f, r-20.0f,
+            0.8f,  0.4f,  0.1f,
+            t-20.0f, 60.0f, r-20.0f,
+            0.8f,  0.4f,  0.1f,
+
+            t-20.0f, 0.0f, r+20.0f,
+            0.8f,  0.4f,  0.1f,
+            t-20.0f, 60.0f, r-20.0f,
+            0.8f,  0.4f,  0.1f,
+            t-20.0f, 60.0f, r+20.0f,
+            0.8f,  0.4f,  0.1f,
+                                    //Side3
+            t+20.0f, 0.0f, r+20.0f,
+            0.8f,  0.4f,  0.1f,
+            t-20.0f, 0.0f, r+20.0f,
+            0.8f,  0.4f,  0.1f,
+            t-20.0f, 60.0f, r+20.0f,
+            0.8f,  0.4f,  0.1f,
+
+            t+20.0f, 0.0f, r+20.0f,
+            0.8f,  0.4f,  0.1f,
+            t-20.0f, 60.0f, r+20.0f,
+            0.8f,  0.4f,  0.1f,
+            t+20.0f, 60.0f, r+20.0f,
+            0.8f,  0.4f,  0.1f,
+                                    //Baumkrone - boden
+            t-30.0f, 60.0f, r-30.0f,
+            0.2f, 0.5f, 0.0f,
+            t+30.0f, 60.0f,r-30.0f,
+            0.2f, 0.5f, 0.0f,
+            t+30.0f, 60.0f, r+30.0f,
+            0.2f, 0.5f, 0.0f,
+
+            t-30.0f, 60.0f, r-30.0f,
+            0.2f, 0.5f, 0.0f,
+            t+30.0f, 60.0f,r+30.0f,
+            0.2f, 0.5f, 0.0f,
+            t-30.0f, 60.0f, r+30.0f,
+            0.2f, 0.5f, 0.0f,
+                                    //Baumkrone
+            t-30.0f, 60.0f, r-30.0f,
+            0.2f, 0.5f, 0.0f,
+            t+30.0f, 60.0f,r-30.0f,
+            0.2f, 0.5f, 0.0f,
+            t+0.0f, 120.0f, r+0.0f,
+            0.2f, 0.5f, 0.0f,
+
+            t-30.0f, 60.0f, r+30.0f,
+            0.2f, 0.5f, 0.0f,
+            t-30.0f, 60.0f,r-30.0f,
+            0.2f, 0.5f, 0.0f,
+            t+0.0f, 120.0f, r+0.0f,
+            0.2f, 0.5f, 0.0f,
+
+            t+30.0f, 60.0f, r+30.0f,
+            0.2f, 0.5f, 0.0f,
+            t-30.0f, 60.0f,r+30.0f,
+            0.2f, 0.5f, 0.0f,
+            t+0.0f, 120.0f, r+0.0f,
+            0.2f, 0.5f, 0.0f,
+
+            t+30.0f, 60.0f, r-30.0f,
+            0.2f, 0.5f, 0.0f,
+            t+30.0f, 60.0f,r+30.0f,
+            0.2f, 0.5f, 0.0f,
+            t+0.0f, 120.0f, r+0.0f,
+            0.2f, 0.5f, 0.0f,
     };
 }
