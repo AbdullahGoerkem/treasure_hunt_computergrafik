@@ -6,6 +6,9 @@ public class Haus extends StartCodeMainWindowPP{
     public static int t = 50;       //koordinaten fuer baum
     public static int r = 50;
 
+    public static int kircheX = 200;
+    public static int kircheY = 100;
+
     public static float[] verticies = {
                                         //Boden
             0.0f, 0.0f, 0.0f,
@@ -23,12 +26,12 @@ public class Haus extends StartCodeMainWindowPP{
             0.6f,  1.0f,  0.5f,
 
             //front
-            x-20.0f,  0.0f,   y+0.0f, 	 // 0 position
-            0.0f,  1.0f,  0.0f,  // 0 color
-            x+20.0f,  0.0f,   y+0.0f, 	 // 1 position
-            0.0f,  1.0f,  0.0f,  // 1 color
-            x+20.0f, 40.0f, y+0.0f, //2 pos
-            0.0f,  1.0f,  0.0f, //2 color
+            x-20.0f,  0.0f,   y+0.0f, 	 // 1 position
+            0.0f,  1.0f,  0.0f,          // 1 color
+            x+20.0f,  0.0f,   y+0.0f, 	 // 2 position
+            0.0f,  1.0f,  0.0f,          // 2 color
+            x+20.0f, 40.0f, y+0.0f,      // 3 position
+            0.0f,  1.0f,  0.0f,          // 3 color
 
            x -20.0f, 0.0f, y+0.0f, //3pos
             1.0f,  0.0f,  0.0f, //3colors
@@ -231,5 +234,191 @@ public class Haus extends StartCodeMainWindowPP{
             0.2f, 0.5f, 0.0f,
             t+0.0f, 120.0f, r+0.0f,
             0.2f, 0.5f, 0.0f,
+
+            /*
+            KIRCHE MODELL
+             */
+                                                 //boden
+            kircheX-40.0f, 0.0f, kircheY-20.0f,
+            0.5f, 0.5f, 0.5f,
+            kircheX+40.0f, 0.0f, kircheY-20.0f,
+            0.5f, 0.5f, 0.5f,
+            kircheX+40.0f, 0.0f, kircheY+20.0f,
+            0.5f, 0.5f, 0.5f,
+
+            kircheX-40.0f, 0.0f, kircheY-20.0f,
+            0.5f, 0.5f, 0.5f,
+            kircheX+40.0f, 0.0f, kircheY+20.0f,
+            0.5f, 0.5f, 0.5f,
+            kircheX-40.0f, 0.0f, kircheY+20.0f,
+            0.5f, 0.5f, 0.5f,
+                                                //wand1
+            kircheX-40.0f, 0.0f, kircheY-20.0f,
+            0.5f, 0.5f, 0.5f,
+            kircheX-10.0f, 0.0f, kircheY-20.0f,
+            0.5f, 0.5f, 0.5f,
+            kircheX-10.0f, 60.0f, kircheY-20.0f,
+            1.0f,1.0f,1.0f,
+
+            kircheX-40.0f, 0.0f, kircheY-20.0f,
+            0.5f, 0.5f, 0.5f,
+            kircheX-10.0f, 60.0f, kircheY-20.0f,
+            1.0f,1.0f,1.0f,
+            kircheX-40.0f, 60.0f, kircheY-20.0f,
+            1.0f,1.0f,1.0f,
+                                                //wand2 (kleinere wand)
+            kircheX-10.0f, 0.0f, kircheY-20.0f,
+            0.5f, 0.5f, 0.5f,
+            kircheX+40.0f, 0.0f, kircheY-20.0f,
+            0.5f, 0.5f, 0.5f,
+            kircheX+40.0f, 20.0f, kircheY-20.0f,
+            0.5f, 0.5f, 0.5f,
+
+            kircheX-10.0f, 0.0f, kircheY-20.0f,
+            0.5f, 0.5f, 0.5f,
+            kircheX+40.0f, 20.0f, kircheY-20.0f,
+            0.5f, 0.5f, 0.5f,
+            kircheX-10.0f, 20.0f, kircheY-20.0f,
+            0.5f, 0.5f, 0.5f,
+                                                //wand3
+            kircheX-40.0f, 0.0f, kircheY+20.0f,
+            0.5f, 0.5f, 0.5f,
+            kircheX-10.0f, 0.0f, kircheY+20.0f,
+            0.5f, 0.5f, 0.5f,
+            kircheX-10.0f, 60.0f, kircheY+20.0f,
+            1.0f,1.0f,1.0f,
+
+            kircheX-40.0f, 0.0f, kircheY+20.0f,
+            0.5f, 0.5f, 0.5f,
+            kircheX-10.0f, 60.0f, kircheY+20.0f,
+            1.0f,1.0f,1.0f,
+            kircheX-40.0f, 60.0f, kircheY+20.0f,
+            1.0f,1.0f,1.0f,
+                                                //wand4 (kleinere wand)
+            kircheX-10.0f, 0.0f, kircheY+20.0f,
+            0.5f, 0.5f, 0.5f,
+            kircheX+40.0f, 0.0f, kircheY+20.0f,
+            0.5f, 0.5f, 0.5f,
+            kircheX+40.0f, 20.0f, kircheY+20.0f,
+            0.5f, 0.5f, 0.5f,
+
+            kircheX-10.0f, 0.0f, kircheY+20.0f,
+            0.5f, 0.5f, 0.5f,
+            kircheX+40.0f, 20.0f, kircheY+20.0f,
+            0.5f, 0.5f, 0.5f,
+            kircheX-10.0f, 20.0f, kircheY+20.0f,
+            0.5f, 0.5f, 0.5f,
+                                                //wand5
+            kircheX-40.0f, 0.0f, kircheY+20.0f,
+            0.5f, 0.5f, 0.5f,
+            kircheX-40.0f, 0.0f, kircheY-20.0f,
+            0.5f, 0.5f, 0.5f,
+            kircheX-40.0f, 60.0f, kircheY-20.0f,
+            1.0f,1.0f,1.0f,
+
+            kircheX-40.0f, 0.0f, kircheY+20.0f,
+            0.5f, 0.5f, 0.5f,
+            kircheX-40.0f, 60.0f, kircheY-20.0f,
+            1.0f,1.0f,1.0f,
+            kircheX-40.0f, 60.0f, kircheY+20.0f,
+            1.0f,1.0f,1.0f,
+                                               //wand6 (hohes dach)
+            kircheX-40.0f, 60.0f, kircheY-20.0f,
+            1.0f,1.0f,1.0f,
+            kircheX-10.0f, 60.0f, kircheY-20.0f,
+            1.0f,1.0f,1.0f,
+            kircheX-10.0f, 60.0f, kircheY+20.0f,
+            1.0f,1.0f,1.0f,
+
+            kircheX-40.0f, 60.0f, kircheY-20.0f,
+            1.0f,1.0f,1.0f,
+            kircheX-10.0f, 60.0f, kircheY+20.0f,
+            1.0f,1.0f,1.0f,
+            kircheX-40.0f, 60.0f, kircheY+20.0f,
+            1.0f,1.0f,1.0f,
+                                              //wand7
+            kircheX-10.0f, 20.0f, kircheY-20.0f,
+            0.5f, 0.5f, 0.5f,
+            kircheX-10.0f, 20.0f, kircheY+20.0f,
+            0.5f, 0.5f, 0.5f,
+            kircheX-10.0f, 60.0f, kircheY+20.0f,
+            1.0f,1.0f,1.0f,
+
+            kircheX-10.0f, 20.0f, kircheY-20.0f,
+            0.5f, 0.5f, 0.5f,
+            kircheX-10.0f, 60.0f, kircheY+20.0f,
+            1.0f,1.0f,1.0f,
+            kircheX-10.0f, 60.0f, kircheY-20.0f,
+            1.0f,1.0f,1.0f,
+                                              //wand8 (niedriges dach)
+            kircheX-10.0f, 20.0f, kircheY-20.0f,
+            0.5f, 0.5f, 0.5f,
+            kircheX+40.0f, 20.0f, kircheY-20.0f,
+            0.5f, 0.5f, 0.5f,
+            kircheX+40.0f, 20.0f, kircheY+20.0f,
+            0.5f, 0.5f, 0.5f,
+
+            kircheX-10.0f, 20.0f, kircheY-20.0f,
+            0.5f, 0.5f, 0.5f,
+            kircheX+40.0f, 20.0f, kircheY+20.0f,
+            0.5f, 0.5f, 0.5f,
+            kircheX-10.0f, 20.0f, kircheY+20.0f,
+            0.5f, 0.5f, 0.5f,
+                                              //wand9
+            kircheX+40.0f, 0.0f, kircheY-20.0f,
+            0.5f, 0.5f, 0.5f,
+            kircheX+40.0f, 0.0f, kircheY+20.0f,
+            0.5f, 0.5f, 0.5f,
+            kircheX+40.0f, 20.0f, kircheY+20.0f,
+            0.5f, 0.5f, 0.5f,
+
+            kircheX+40.0f, 0.0f, kircheY-20.0f,
+            0.5f, 0.5f, 0.5f,
+            kircheX+40.0f, 20.0f, kircheY+20.0f,
+            0.5f, 0.5f, 0.5f,
+            kircheX+40.0f, 20.0f, kircheY-20.0f,
+            0.5f, 0.5f, 0.5f,
+                                            //Dach
+            kircheX-50.0f, 60.0f, kircheY-30.0f,
+            0.8f,  0.4f,  0.1f,
+            kircheX+0.0f, 60.0f, kircheY-30.0f,
+            0.8f,  0.4f,  0.1f,
+            kircheX+0.0f, 60.0f, kircheY+30.0f,
+            0.8f,  0.4f,  0.1f,
+
+            kircheX-50.0f, 60.0f, kircheY-30.0f,
+            0.8f,  0.4f,  0.1f,
+            kircheX+0.0f, 60.0f, kircheY+30.0f,
+            0.8f,  0.4f,  0.1f,
+            kircheX-50.0f, 60.0f, kircheY+30.0f,
+            0.8f,  0.4f,  0.1f,
+                                             //dach seite1
+            kircheX-50.0f, 60.0f, kircheY-30.0f,
+            0.8f,  0.4f,  0.1f,
+            kircheX+0.0f, 60.0f, kircheY-30.0f,
+            0.8f,  0.4f,  0.1f,
+            kircheX-25.0f, 80.0f, kircheY+0.0f,
+            0.8f,  0.4f,  0.1f,
+                                            //dach seite2
+            kircheX+0.0f, 60.0f, kircheY-30.0f,
+            0.8f,  0.4f,  0.1f,
+            kircheX+0.0f, 60.0f, kircheY+30.0f,
+            0.8f,  0.4f,  0.1f,
+            kircheX-25.0f, 80.0f, kircheY+0.0f,
+            0.8f,  0.4f,  0.1f,
+                                            //dach seite3
+            kircheX+0.0f, 60.0f, kircheY+30.0f,
+            0.8f,  0.4f,  0.1f,
+            kircheX-50.0f, 60.0f, kircheY+30.0f,
+            0.8f,  0.4f,  0.1f,
+            kircheX-25.0f, 80.0f, kircheY+0.0f,
+            0.8f,  0.4f,  0.1f,
+                                              //dach seite4
+            kircheX-50.0f, 60.0f, kircheY+30.0f,
+            0.8f,  0.4f,  0.1f,
+            kircheX-50.0f, 60.0f, kircheY-30.0f,
+            0.8f,  0.4f,  0.1f,
+            kircheX-25.0f, 80.0f, kircheY+0.0f,
+            0.8f,  0.4f,  0.1f,
     };
 }
