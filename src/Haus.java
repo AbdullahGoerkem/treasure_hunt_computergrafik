@@ -3,11 +3,14 @@ public class Haus extends StartCodeMainWindowPP{
    public static int x = 300;       //koordinaten fuer haus
     public static int y = 300;
 
-    public static int t = 50;       //koordinaten fuer baum
-    public static int r = 50;
+    public static int t = 200;       //koordinaten fuer baum
+    public static int r = 200;
 
-    public static int kircheX = 200;
-    public static int kircheY = 50;
+    public static int kircheX = 600; //koordinaten fuer kirche
+    public static int kircheY = 300;
+
+    public static int truheX = 50; //koordinaten fuer truhe
+    public static int truheY = 50;
 
     public static float[] verticies = {
                                         //Boden
@@ -420,5 +423,177 @@ public class Haus extends StartCodeMainWindowPP{
             0.8f,  0.6f,  0.3f,
             kircheX-25.0f, 80.0f, kircheY+0.0f,
             0.8f,  0.4f,  0.1f,
+
+            /*
+            SCHATZTRUHE MODELL
+             */
+                                               //boden
+            truheX-20.0f, 0.0f, truheY-10.0f,
+            0.8f,  0.4f,  0.1f,
+            truheX+20.0f, 0.0f, truheY-10.0f,
+            0.8f,  0.4f,  0.1f,
+            truheX+20.0f, 0.0f, truheY+10.0f,
+            0.8f,  0.4f,  0.1f,
+
+            truheX-20.0f, 0.0f, truheY-10.0f,
+            0.8f,  0.4f,  0.1f,
+            truheX+20.0f, 0.0f, truheY+10.0f,
+            0.8f,  0.4f,  0.1f,
+            truheX-20.0f, 0.0f, truheY+10.0f,
+            0.8f,  0.4f,  0.1f,
+                                               //wand1
+            truheX-20.0f, 0.0f, truheY-10.0f,
+            0.8f,  0.4f,  0.1f,
+            truheX+20.0f, 0.0f, truheY-10.0f,
+            0.8f,  0.4f,  0.1f,
+            truheX+20.0f, 20.0f, truheY-10.0f,
+            0.8f,  0.4f,  0.1f,
+
+            truheX-20.0f, 0.0f, truheY-10.0f,
+            0.8f,  0.4f,  0.1f,
+            truheX+20.0f, 20.0f, truheY-10.0f,
+            0.8f,  0.4f,  0.1f,
+            truheX-20.0f, 20.0f, truheY-10.0f,
+            0.8f,  0.4f,  0.1f,
+                                             //wand2
+            truheX+20.0f, 0.0f, truheY-10.0f,
+            0.8f,  0.4f,  0.1f,
+            truheX+20.0f, 0.0f, truheY+10.0f,
+            0.8f,  0.4f,  0.1f,
+            truheX+20.0f, 20.0f, truheY+10.0f,
+            0.8f,  0.4f,  0.1f,
+
+            truheX+20.0f, 0.0f, truheY-10.0f,
+            0.8f,  0.4f,  0.1f,
+            truheX+20.0f, 20.0f, truheY+10.0f,
+            0.8f,  0.4f,  0.1f,
+            truheX+20.0f, 20.0f, truheY-10.0f,
+            0.8f,  0.4f,  0.1f,
+                                              //wand3
+            truheX+20.0f, 0.0f, truheY+10.0f,
+            0.8f,  0.4f,  0.1f,
+            truheX-20.0f, 0.0f, truheY+10.0f,
+            0.8f,  0.4f,  0.1f,
+            truheX-20.0f, 20.0f, truheY+10.0f,
+            0.8f,  0.4f,  0.1f,
+
+            truheX+20.0f, 0.0f, truheY+10.0f,
+            0.8f,  0.4f,  0.1f,
+            truheX-20.0f, 20.0f, truheY+10.0f,
+            0.8f,  0.4f,  0.1f,
+            truheX+20.0f, 20.0f, truheY+10.0f,
+            0.8f,  0.4f,  0.1f,
+                                             //wand4
+            truheX-20.0f, 0.0f, truheY+10.0f,
+            0.8f,  0.4f,  0.1f,
+            truheX-20.0f, 0.0f, truheY-10.0f,
+            0.8f,  0.4f,  0.1f,
+            truheX-20.0f, 20.0f, truheY-10.0f,
+            0.8f,  0.4f,  0.1f,
+
+            truheX-20.0f, 0.0f, truheY+10.0f,
+            0.8f,  0.4f,  0.1f,
+            truheX-20.0f, 20.0f, truheY-10.0f,
+            0.8f,  0.4f,  0.1f,
+            truheX-20.0f, 20.0f, truheY+10.0f,
+            0.8f,  0.4f,  0.1f,
+                                             //abdeckung (wand1)
+            truheX-20.f, 20.0f, truheY-10.0f,
+            0.4f,  0.2f,  0.0f,
+            truheX+20.f, 20.0f, truheY-10.0f,
+            0.4f,  0.2f,  0.0f,
+            truheX+20.f, 25.0f, truheY-10.0f,
+            0.8f,  0.4f,  0.1f,
+
+            truheX-20.f, 20.0f, truheY-10.0f,
+            0.4f,  0.2f,  0.0f,
+            truheX+20.f, 25.0f, truheY-10.0f,
+            0.8f,  0.4f,  0.1f,
+            truheX-20.f, 25.0f, truheY-10.0f,
+            0.8f,  0.4f,  0.1f,
+                                            //abdeckung (wand2)
+            truheX+20.f, 20.0f, truheY-10.0f,
+            0.4f,  0.2f,  0.0f,
+            truheX+20.f, 20.0f, truheY+10.0f,
+            0.4f,  0.2f,  0.0f,
+            truheX+20.f, 25.0f, truheY+10.0f,
+            0.8f,  0.4f,  0.1f,
+
+            truheX+20.f, 20.0f, truheY-10.0f,
+            0.4f,  0.2f,  0.0f,
+            truheX+20.f, 25.0f, truheY+10.0f,
+            0.8f,  0.4f,  0.1f,
+            truheX+20.f, 25.0f, truheY-10.0f,
+            0.8f,  0.4f,  0.1f,
+                                           //abdeckung (wand3)
+            truheX+20.f, 20.0f, truheY+10.0f,
+            0.4f,  0.2f,  0.0f,
+            truheX-20.f, 20.0f, truheY+10.0f,
+            0.4f,  0.2f,  0.0f,
+            truheX-20.f, 25.0f, truheY+10.0f,
+            0.8f,  0.4f,  0.1f,
+
+            truheX+20.f, 20.0f, truheY+10.0f,
+            0.4f,  0.2f,  0.0f,
+            truheX-20.f, 25.0f, truheY+10.0f,
+            0.8f,  0.4f,  0.1f,
+            truheX+20.f, 25.0f, truheY+10.0f,
+            0.8f,  0.4f,  0.1f,
+                                           //abdeckung (wand4)
+            truheX-20.f, 20.0f, truheY+10.0f,
+            0.4f,  0.2f,  0.0f,
+            truheX-20.f, 20.0f, truheY-10.0f,
+            0.4f,  0.2f,  0.0f,
+            truheX-20.f, 25.0f, truheY-10.0f,
+            0.8f,  0.4f,  0.1f,
+
+            truheX-20.f, 20.0f, truheY+10.0f,
+            0.4f,  0.2f,  0.0f,
+            truheX-20.f, 25.0f, truheY-10.0f,
+            0.8f,  0.4f,  0.1f,
+            truheX-20.f, 25.0f, truheY+10.0f,
+            0.8f,  0.4f,  0.1f,
+                                          //abdeckung (oben)
+            truheX-20.0f, 25.0f, truheY-10.0f,
+            0.8f,  0.4f,  0.1f,
+            truheX+20.0f, 25.0f, truheY-10.0f,
+            0.8f,  0.4f,  0.1f,
+            truheX+20.0f, 25.0f, truheY+10.0f,
+            0.8f,  0.4f,  0.1f,
+
+            truheX-20.0f, 25.0f, truheY-10.0f,
+            0.8f,  0.4f,  0.1f,
+            truheX+20.0f, 25.0f, truheY+10.0f,
+            0.8f,  0.4f,  0.1f,
+            truheX-20.0f, 25.0f, truheY+10.0f,
+            0.8f,  0.4f,  0.1f,
+                                         //schloss1
+            truheX-11.0f, 17.5f, truheY-11.0f,
+            1.0f, 1.0f, 0.2f,
+            truheX-9.0f, 17.5f, truheY-11.0f,
+            1.0f, 1.0f, 0.2f,
+            truheX-9.0f, 22.5f, truheY-11.0f,
+            1.0f, 1.0f, 0.2f,
+
+            truheX-11.0f, 17.5f, truheY-11.0f,
+            1.0f, 1.0f, 0.2f,
+            truheX-9.0f, 22.5f, truheY-11.0f,
+            1.0f, 1.0f, 0.2f,
+            truheX-11.0f, 22.5f, truheY-11.0f,
+            1.0f, 1.0f, 0.2f,
+                                        //schloss2
+            truheX+11.0f, 17.5f, truheY-11.0f,
+            1.0f, 1.0f, 0.2f,
+            truheX+9.0f, 17.5f, truheY-11.0f,
+            1.0f, 1.0f, 0.2f,
+            truheX+9.0f, 22.5f, truheY-11.0f,
+            1.0f, 1.0f, 0.2f,
+
+            truheX+11.0f, 17.5f, truheY-11.0f,
+            1.0f, 1.0f, 0.2f,
+            truheX+9.0f, 22.5f, truheY-11.0f,
+            1.0f, 1.0f, 0.2f,
+            truheX+11.0f, 22.5f, truheY-11.0f,
+            1.0f, 1.0f, 0.2f,
     };
 }
