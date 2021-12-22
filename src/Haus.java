@@ -7,7 +7,7 @@ public class Haus extends StartCodeMainWindowPP{
     public static int r = 50;
 
     public static int kircheX = 200;
-    public static int kircheY = 100;
+    public static int kircheY = 50;
 
     public static float[] verticies = {
                                         //Boden
@@ -380,44 +380,44 @@ public class Haus extends StartCodeMainWindowPP{
             0.5f, 0.5f, 0.5f,
                                             //Dach
             kircheX-50.0f, 60.0f, kircheY-30.0f,
-            0.8f,  0.4f,  0.1f,
+            0.8f,  0.6f,  0.3f,
             kircheX+0.0f, 60.0f, kircheY-30.0f,
-            0.8f,  0.4f,  0.1f,
+            0.8f,  0.6f,  0.3f,
             kircheX+0.0f, 60.0f, kircheY+30.0f,
-            0.8f,  0.4f,  0.1f,
+            0.8f,  0.6f,  0.3f,
 
             kircheX-50.0f, 60.0f, kircheY-30.0f,
-            0.8f,  0.4f,  0.1f,
+            0.8f,  0.6f,  0.3f,
             kircheX+0.0f, 60.0f, kircheY+30.0f,
-            0.8f,  0.4f,  0.1f,
+            0.8f,  0.6f,  0.3f,
             kircheX-50.0f, 60.0f, kircheY+30.0f,
-            0.8f,  0.4f,  0.1f,
+            0.8f,  0.6f,  0.3f,
                                              //dach seite1
             kircheX-50.0f, 60.0f, kircheY-30.0f,
-            0.8f,  0.4f,  0.1f,
+            0.8f,  0.6f,  0.3f,
             kircheX+0.0f, 60.0f, kircheY-30.0f,
-            0.8f,  0.4f,  0.1f,
+            0.8f,  0.6f,  0.3f,
             kircheX-25.0f, 80.0f, kircheY+0.0f,
             0.8f,  0.4f,  0.1f,
                                             //dach seite2
             kircheX+0.0f, 60.0f, kircheY-30.0f,
-            0.8f,  0.4f,  0.1f,
+            0.8f,  0.6f,  0.3f,
             kircheX+0.0f, 60.0f, kircheY+30.0f,
-            0.8f,  0.4f,  0.1f,
+            0.8f,  0.6f,  0.3f,
             kircheX-25.0f, 80.0f, kircheY+0.0f,
             0.8f,  0.4f,  0.1f,
                                             //dach seite3
             kircheX+0.0f, 60.0f, kircheY+30.0f,
-            0.8f,  0.4f,  0.1f,
+            0.8f,  0.6f,  0.3f,
             kircheX-50.0f, 60.0f, kircheY+30.0f,
-            0.8f,  0.4f,  0.1f,
+            0.8f,  0.6f,  0.3f,
             kircheX-25.0f, 80.0f, kircheY+0.0f,
             0.8f,  0.4f,  0.1f,
                                               //dach seite4
             kircheX-50.0f, 60.0f, kircheY+30.0f,
-            0.8f,  0.4f,  0.1f,
+            0.8f,  0.6f,  0.3f,
             kircheX-50.0f, 60.0f, kircheY-30.0f,
-            0.8f,  0.4f,  0.1f,
+            0.8f,  0.6f,  0.3f,
             kircheX-25.0f, 80.0f, kircheY+0.0f,
             0.8f,  0.4f,  0.1f,
     };
